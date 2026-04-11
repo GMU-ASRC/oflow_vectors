@@ -17,11 +17,14 @@ class FarnebackFlowNode : public rclcpp::Node {
 public:
   FarnebackFlowNode() : Node("farneback_optical_flow") {
     declare_parameter<std::string>("image_topic", "/camera/image_raw");
-    declare_parameter<std::string>("output_topic", "/mavros/px4flow/raw/optical_flow_rad");
+    declare_parameter<std::string>("output_topic", "/mavros/setpoint_velocity/cmd_vel_unstamped");
     declare_parameter<std::string>("frame_id", "camera_link");
 
     declare_parameter<double>("flow_to_rad_scale", 0.002);
     declare_parameter<int>("roi_margin_px", 40);
+    declare_parameter<double>("lateral_gain", 0.5);
+    declare_parameter<double>("forward_speed", 0.3);
+    declare_parameter<double>("slowdown_threshold", 5.0);
 
     // Farneback params
     declare_parameter<double>("pyr_scale", 0.5);
@@ -46,7 +49,7 @@ public:
     poly_sigma_ = get_parameter("poly_sigma").as_double();
     flags_ = get_parameter("flags").as_int();
 
-    pub_ = create_publisher<mavros_msgs::msg::OpticalFlowRad>(output_topic_, 10);
+    cmd_pub_ = create_publisher<geometry_msgs::msg::Twist>(output_topic_, 10);
     sub_ = create_subscription<sensor_msgs::msg::Image>(
       image_topic_, rclcpp::SensorDataQoS(),
       std::bind(&FarnebackFlowNode::on_image, this, _1));
@@ -56,6 +59,39 @@ public:
   }
 
 private:
+  void compute_and_publish_cmd(const cv::Mat& flow, const builtin_interfaces::msg::Time& stamp) {
+    int w = flow.cols, h = flow.rows;
+    int mid = w / 2;
+
+    // Compute mean flow magnitude for left and right halves
+    cv::Mat mag, angle;
+    std::vector<cv::Mat> flow_xy;
+    cv::split(flow, flow_xy);
+    cv::cartToPolar(flow_xy[0], flow_xy[1], mag, angle);
+
+    cv::Rect left_roi(0, 0, mid, h);
+    cv::Rect right_roi(mid, 0, w - mid, h);
+
+    double left_mag = cv::mean(mag(left_roi))[0];
+    double right_mag = cv::mean(mag(right_roi))[0];
+    double total_mag = (left_mag + right_mag) / 2.0;
+
+    double lateral_gain = get_parameter("lateral_gain").as_double();
+    double forward_speed = get_parameter("forward_speed").as_double();
+    double slowdown_thresh = get_parameter("slowdown_threshold").as_double();
+
+    geometry_msgs::msg::Twist cmd;
+
+    // Lateral: steer away from the side with more flow
+    double imbalance = right_mag - left_mag;
+    cmd.angular.z = imbalance * lateral_gain;
+
+    // Forward: slow down when overall flow is high (obstacle ahead)
+    double speed_scale = std::max(0.0, 1.0 - (total_mag / slowdown_thresh));
+    cmd.linear.x = forward_speed * speed_scale;
+
+    cmd_pub_->publish(cmd);
+    }
   void on_image(const sensor_msgs::msg::Image::SharedPtr msg) {
     cv_bridge::CvImageConstPtr cv_ptr;
     try {
@@ -105,39 +141,7 @@ private:
     cv::waitKey(1);
     // -----------------------------------------
 
-    void compute_and_publish_cmd(const cv::Mat& flow, const builtin_interfaces::msg::Time& stamp) {
-    int w = flow.cols, h = flow.rows;
-    int mid = w / 2;
-
-    // Compute mean flow magnitude for left and right halves
-    cv::Mat mag, angle;
-    std::vector<cv::Mat> flow_xy;
-    cv::split(flow, flow_xy);
-    cv::cartToPolar(flow_xy[0], flow_xy[1], mag, angle);
-
-    cv::Rect left_roi(0, 0, mid, h);
-    cv::Rect right_roi(mid, 0, w - mid, h);
-
-    double left_mag = cv::mean(mag(left_roi))[0];
-    double right_mag = cv::mean(mag(right_roi))[0];
-    double total_mag = (left_mag + right_mag) / 2.0;
-
-    double lateral_gain = get_parameter("lateral_gain").as_double();
-    double forward_speed = get_parameter("forward_speed").as_double();
-    double slowdown_thresh = get_parameter("slowdown_threshold").as_double();
-
-    geometry_msgs::msg::Twist cmd;
-
-    // Lateral: steer away from the side with more flow
-    double imbalance = right_mag - left_mag;
-    cmd.angular.z = imbalance * lateral_gain;
-
-    // Forward: slow down when overall flow is high (obstacle ahead)
-    double speed_scale = std::max(0.0, 1.0 - (total_mag / slowdown_thresh));
-    cmd.linear.x = forward_speed * speed_scale;
-
-    cmd_pub_->publish(cmd);
-    }
+    
 
     compute_and_publish_cmd(flow, msg->header.stamp);
     prev_gray_ = gray.clone();
