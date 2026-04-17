@@ -1,0 +1,78 @@
+[0.298s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'optical_flow_cpp']
+[0.298s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['optical_flow_cpp'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ebd11582fe0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ebd116fbc10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ebd116fbc10>>)
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.356s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/drone-laptop/oflow_vectors'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.382s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'optical_flow_cpp'
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.417s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.421s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 341 installed packages in /opt/ros/humble
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'cmake_args' from command line to 'None'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'cmake_target' from command line to 'None'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.478s] Level 5:colcon.colcon_core.verb:set package 'optical_flow_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.478s] DEBUG:colcon.colcon_core.verb:Building package 'optical_flow_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/drone-laptop/oflow_vectors/build/optical_flow_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp', 'merge_install': False, 'path': '/home/drone-laptop/oflow_vectors', 'symlink_install': False, 'test_result_base': None}
+[0.478s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.479s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.479s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/drone-laptop/oflow_vectors' with build type 'ament_cmake'
+[0.480s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/drone-laptop/oflow_vectors'
+[0.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.485s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.485s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drone-laptop/oflow_vectors/build/optical_flow_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/drone-laptop/oflow_vectors -DCMAKE_INSTALL_PREFIX=/home/drone-laptop/oflow_vectors/install/optical_flow_cpp
+[0.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drone-laptop/oflow_vectors/build/optical_flow_cpp' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/drone-laptop/oflow_vectors -DCMAKE_INSTALL_PREFIX=/home/drone-laptop/oflow_vectors/install/optical_flow_cpp
+[0.527s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(optical_flow_cpp)
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp' for CMake module files
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp' for CMake config files
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/bin'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/lib/pkgconfig/optical_flow_cpp.pc'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/lib/python3.10/site-packages'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/bin'
+[0.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.ps1'
+[0.536s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.dsv'
+[0.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.sh'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.bash'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.zsh'
+[0.541s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drone-laptop/oflow_vectors/install/optical_flow_cpp/share/colcon-core/packages/optical_flow_cpp)
+[0.551s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.552s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.552s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[0.552s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.559s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.559s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.560s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.647s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.648s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drone-laptop/oflow_vectors/install/local_setup.ps1'
+[0.652s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/drone-laptop/oflow_vectors/install/_local_setup_util_ps1.py'
+[0.661s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drone-laptop/oflow_vectors/install/setup.ps1'
+[0.665s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drone-laptop/oflow_vectors/install/local_setup.sh'
+[0.668s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/drone-laptop/oflow_vectors/install/_local_setup_util_sh.py'
+[0.670s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drone-laptop/oflow_vectors/install/setup.sh'
+[0.673s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drone-laptop/oflow_vectors/install/local_setup.bash'
+[0.675s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drone-laptop/oflow_vectors/install/setup.bash'
+[0.677s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drone-laptop/oflow_vectors/install/local_setup.zsh'
+[0.679s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drone-laptop/oflow_vectors/install/setup.zsh'
