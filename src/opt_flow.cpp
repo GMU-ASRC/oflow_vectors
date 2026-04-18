@@ -59,7 +59,7 @@ public:
   }
 
 private:
-  void compute_and_publish_cmd(const cv::Mat& flow, const builtin_interfaces::msg::Time& stamp) {
+  void compute_and_publish_cmd(const cv::Mat& flow, const builtin_interfaces::msg::Time& /*stamp*/) {
     int w = flow.cols, h = flow.rows;
     int mid = w / 2;
 

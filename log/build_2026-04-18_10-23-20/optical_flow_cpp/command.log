@@ -1,0 +1,2 @@
+Invoking command in '/home/thomas/oflow_vectors/build/optical_flow_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thomas/oflow_vectors -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/thomas/oflow_vectors/install/optical_flow_cpp
+Invoked command in '/home/thomas/oflow_vectors/build/optical_flow_cpp' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thomas/oflow_vectors -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/thomas/oflow_vectors/install/optical_flow_cpp

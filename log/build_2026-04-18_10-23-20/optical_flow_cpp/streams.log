@@ -1,0 +1,8 @@
+[0.007s] Invoking command in '/home/thomas/oflow_vectors/build/optical_flow_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thomas/oflow_vectors -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/thomas/oflow_vectors/install/optical_flow_cpp
+[0.013s] CMake Error at CMakeLists.txt:16:
+[0.013s]   Parse error.  Expected a command name, got unquoted argument with text
+[0.013s]   "//added".
+[0.013s] 
+[0.013s] 
+[0.014s] -- Configuring incomplete, errors occurred!
+[0.015s] Invoked command in '/home/thomas/oflow_vectors/build/optical_flow_cpp' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thomas/oflow_vectors -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/thomas/oflow_vectors/install/optical_flow_cpp

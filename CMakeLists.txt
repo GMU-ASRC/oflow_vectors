@@ -13,7 +13,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(mavros_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
-//added this
+# added this
 add_executable(farneback_flow_node src/opt_flow.cpp)
 
 # Link the libraries to your node
@@ -38,4 +38,3 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
-find_package(cv_bridge REQ)
