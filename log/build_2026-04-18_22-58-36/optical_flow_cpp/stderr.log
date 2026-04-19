@@ -1,0 +1,4 @@
+/home/thomas/oflow_vectors/src/opt_flow.cpp: In member function ‘void FarnebackFlowNode::compute_and_publish_cmd(const cv::Mat&, double)’:
+/home/thomas/oflow_vectors/src/opt_flow.cpp:196:12: warning: unused variable ‘slowdown_thresh’ [-Wunused-variable]
+  196 |     double slowdown_thresh = get_parameter("slowdown_threshold").as_double();
+      |            ^~~~~~~~~~~~~~~

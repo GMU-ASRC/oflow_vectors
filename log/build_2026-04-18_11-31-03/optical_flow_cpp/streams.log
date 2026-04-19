@@ -1,0 +1,31 @@
+[0.006s] Invoking command in '/home/thomas/oflow_vectors/build/optical_flow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/thomas/oflow_vectors/build/optical_flow_cpp -- -j16 -l16
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target farneback_flow_node[0m
+[0.044s] [ 50%] [32mBuilding CXX object CMakeFiles/farneback_flow_node.dir/src/opt_flow.cpp.o[0m
+[1.400s] [01m[K/home/thomas/oflow_vectors/src/opt_flow.cpp:[m[K In member function ‘[01m[Kvoid FarnebackFlowNode::compute_and_publish_cmd(const cv::Mat&, const Time&)[m[K’:
+[1.400s] [01m[K/home/thomas/oflow_vectors/src/opt_flow.cpp:62:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstamp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.400s]    62 |  compute_and_publish_cmd(const cv::Mat& flow, [01;35m[Kconst builtin_interfaces::msg::Time& stamp[m[K) {
+[1.400s]       |                                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.400s] 
+[4.481s] [100%] [32m[1mLinking CXX executable farneback_flow_node[0m
+[4.881s] [100%] Built target farneback_flow_node
+[4.887s] Invoked command in '/home/thomas/oflow_vectors/build/optical_flow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/thomas/oflow_vectors/build/optical_flow_cpp -- -j16 -l16
+[4.892s] Invoking command in '/home/thomas/oflow_vectors/build/optical_flow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/thomas/oflow_vectors/build/optical_flow_cpp
+[4.896s] -- Install configuration: ""
+[4.896s] -- Installing: /home/thomas/oflow_vectors/install/optical_flow_cpp/lib/optical_flow_cpp/farneback_flow_node
+[4.899s] -- Set runtime path of "/home/thomas/oflow_vectors/install/optical_flow_cpp/lib/optical_flow_cpp/farneback_flow_node" to ""
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/ament_index/resource_index/package_run_dependencies/optical_flow_cpp
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/ament_index/resource_index/parent_prefix_path/optical_flow_cpp
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/environment/ament_prefix_path.sh
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/environment/ament_prefix_path.dsv
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/environment/path.sh
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/environment/path.dsv
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/local_setup.bash
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/local_setup.sh
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/local_setup.zsh
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/local_setup.dsv
+[4.899s] -- Installing: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.dsv
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/ament_index/resource_index/packages/optical_flow_cpp
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/cmake/optical_flow_cppConfig.cmake
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/cmake/optical_flow_cppConfig-version.cmake
+[4.899s] -- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.xml
+[4.900s] Invoked command in '/home/thomas/oflow_vectors/build/optical_flow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/thomas/oflow_vectors/build/optical_flow_cpp

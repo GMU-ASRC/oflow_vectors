@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.000125] (optical_flow_cpp) JobQueued: {'identifier': 'optical_flow_cpp', 'dependencies': OrderedDict()}
+[0.000243] (optical_flow_cpp) JobStarted: {'identifier': 'optical_flow_cpp'}
+[0.005904] (optical_flow_cpp) JobProgress: {'identifier': 'optical_flow_cpp', 'progress': 'cmake'}
+[0.006509] (optical_flow_cpp) JobProgress: {'identifier': 'optical_flow_cpp', 'progress': 'build'}
+[0.006825] (optical_flow_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/thomas/oflow_vectors/build/optical_flow_cpp', '--', '-j16', '-l16'], 'cwd': '/home/thomas/oflow_vectors/build/optical_flow_cpp', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/thomas/drone_ws/src/ardupilot_gazebo/build:'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/thomas/oflow_vectors'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('GZ_SIM_RESOURCE_PATH', '/home/thomas/drone_ws/src/ardupilot_gazebo/models:/home/thomas/drone_ws/src/ardupilot_gazebo/worlds:'), ('USER', 'thomas'), ('SNAP_COMMON', '/var/snap/code/common'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/snap/code/227/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIT_EDITOR', 'true'), ('GIO_MODULE_DIR', '/home/thomas/snap/code/common/.cache/gio-modules'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SNAP_UID', '1000'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/thomas'), ('CHROME_DESKTOP', 'code.desktop'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32'), ('OLDPWD', '/home/thomas'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/thomas/snap/code/227'), ('GTK_PATH', '/snap/code/227/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-f561e2ba-1.11-main.sock'), ('GTK_IM_MODULE_FILE', '/home/thomas/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2010'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '227'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'thomas'), ('SNAP_CONTEXT', 'T41MXPNKtvOefgI7EFsfYAUWvRonLCf5J3xu48oafCLMaUwYwpIW'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', '0870c2a0'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'thomas'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'code'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/opt/ros/humble/bin:/usr/bin:/usr/lib/ccache:/opt/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/thomas/.local/bin:/usr/lib/ccache:/opt/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/thomas/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/thomas-MS-7D78:@/tmp/.ICE-unix/1980,unix/thomas-MS-7D78:/tmp/.ICE-unix/1980'), ('GTK_EXE_PREFIX', '/snap/code/227/usr'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7f151c57_4695_4e3f_bbea_280e671cdb5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('SNAP_DATA', '/var/snap/code/227'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/227/usr/lib/locale'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_DATA_HOME', '/home/thomas/snap/code/227/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0DEDO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.111'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/thomas/snap/code/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/thomas/snap/code/227/.local/share/glib-2.0/schemas'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SNAP_COOKIE', 'T41MXPNKtvOefgI7EFsfYAUWvRonLCf5J3xu48oafCLMaUwYwpIW'), ('SHELL', '/bin/bash'), ('GDK_PIXBUF_MODULEDIR', '/snap/code/227/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'code'), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('CLAUDECODE', '1'), ('GDK_PIXBUF_MODULE_FILE', '/home/thomas/snap/code/common/.cache/gdk-pixbuf-loaders.cache'), ('VIRTUAL_ENV', '/usr'), ('SNAP_LAUNCHER_ARCH_TRIPLET', 'x86_64-linux-gnu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/thomas/oflow_vectors/build/optical_flow_cpp'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/thomas'), ('VSCODE_CODE_CACHE_PATH', '/home/thomas/.config/Code/CachedData/0870c2a0c7c0564e7631bfed2675573a94ba4455'), ('XDG_DATA_DIRS', '/home/thomas/snap/code/227/.local/share:/home/thomas/snap/code/227:/snap/code/227/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/thomas/.vscode/extensions/anthropic.claude-code-2.1.114-linux-x64/resources/native-binary/claude'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/code/227'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '7921'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.057552] (optical_flow_cpp) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target farneback_flow_node\n'}
+[0.087111] (optical_flow_cpp) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/farneback_flow_node.dir/src/opt_flow.cpp.o\n'}
+[0.099913] (-) TimerEvent: {}
+[0.200037] (-) TimerEvent: {}
+[0.300178] (-) TimerEvent: {}
+[0.400335] (-) TimerEvent: {}
+[0.500506] (-) TimerEvent: {}
+[0.600876] (-) TimerEvent: {}
+[0.701043] (-) TimerEvent: {}
+[0.801400] (-) TimerEvent: {}
+[0.901570] (-) TimerEvent: {}
+[1.001930] (-) TimerEvent: {}
+[1.102280] (-) TimerEvent: {}
+[1.202663] (-) TimerEvent: {}
+[1.302843] (-) TimerEvent: {}
+[1.403189] (-) TimerEvent: {}
+[1.503380] (-) TimerEvent: {}
+[1.603602] (-) TimerEvent: {}
+[1.671350] (optical_flow_cpp) StderrLine: {'line': b'/home/thomas/oflow_vectors/src/opt_flow.cpp: In member function \xe2\x80\x98void FarnebackFlowNode::on_image(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\xe2\x80\x99:\n'}
+[1.671608] (optical_flow_cpp) StderrLine: {'line': b'/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: error: no matching function for call to \xe2\x80\x98max(int, int64_t)\xe2\x80\x99\n'}
+[1.671642] (optical_flow_cpp) StderrLine: {'line': b'  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());\n'}
+[1.671668] (optical_flow_cpp) StderrLine: {'line': b'      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.671692] (optical_flow_cpp) StderrLine: {'line': b'In file included from /usr/include/c++/11/memory:63,\n'}
+[1.671716] (optical_flow_cpp) StderrLine: {'line': b'                 from /home/thomas/oflow_vectors/src/opt_flow.cpp:1:\n'}
+[1.671741] (optical_flow_cpp) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_algobase.h:254:5: note: candidate: \xe2\x80\x98template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)\xe2\x80\x99\n'}
+[1.671767] (optical_flow_cpp) StderrLine: {'line': b'  254 |     max(const _Tp& __a, const _Tp& __b)\n'}
+[1.671788] (optical_flow_cpp) StderrLine: {'line': b'      |     ^~~\n'}
+[1.671809] (optical_flow_cpp) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_algobase.h:254:5: note:   template argument deduction/substitution failed:\n'}
+[1.671831] (optical_flow_cpp) StderrLine: {'line': b'/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: note:   deduced conflicting types for parameter \xe2\x80\x98const _Tp\xe2\x80\x99 (\xe2\x80\x98int\xe2\x80\x99 and \xe2\x80\x98int64_t\xe2\x80\x99 {aka \xe2\x80\x98long int\xe2\x80\x99})\n'}
+[1.671854] (optical_flow_cpp) StderrLine: {'line': b'  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());\n'}
+[1.671877] (optical_flow_cpp) StderrLine: {'line': b'      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.671898] (optical_flow_cpp) StderrLine: {'line': b'In file included from /usr/include/c++/11/memory:63,\n'}
+[1.671920] (optical_flow_cpp) StderrLine: {'line': b'                 from /home/thomas/oflow_vectors/src/opt_flow.cpp:1:\n'}
+[1.671942] (optical_flow_cpp) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_algobase.h:300:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)\xe2\x80\x99\n'}
+[1.671964] (optical_flow_cpp) StderrLine: {'line': b'  300 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)\n'}
+[1.671985] (optical_flow_cpp) StderrLine: {'line': b'      |     ^~~\n'}
+[1.672007] (optical_flow_cpp) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_algobase.h:300:5: note:   template argument deduction/substitution failed:\n'}
+[1.672031] (optical_flow_cpp) StderrLine: {'line': b'/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: note:   deduced conflicting types for parameter \xe2\x80\x98const _Tp\xe2\x80\x99 (\xe2\x80\x98int\xe2\x80\x99 and \xe2\x80\x98int64_t\xe2\x80\x99 {aka \xe2\x80\x98long int\xe2\x80\x99})\n'}
+[1.672052] (optical_flow_cpp) StderrLine: {'line': b'  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());\n'}
+[1.672073] (optical_flow_cpp) StderrLine: {'line': b'      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.672094] (optical_flow_cpp) StderrLine: {'line': b'In file included from /usr/include/c++/11/algorithm:62,\n'}
+[1.672114] (optical_flow_cpp) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18,\n'}
+[1.672138] (optical_flow_cpp) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,\n'}
+[1.672159] (optical_flow_cpp) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,\n'}
+[1.672181] (optical_flow_cpp) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[1.672202] (optical_flow_cpp) StderrLine: {'line': b'                 from /home/thomas/oflow_vectors/src/opt_flow.cpp:7:\n'}
+[1.672222] (optical_flow_cpp) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_algo.h:3461:5: note: candidate: \xe2\x80\x98template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)\xe2\x80\x99\n'}
+[1.672245] (optical_flow_cpp) StderrLine: {'line': b' 3461 |     max(initializer_list<_Tp> __l)\n'}
+[1.672266] (optical_flow_cpp) StderrLine: {'line': b'      |     ^~~\n'}
+[1.672287] (optical_flow_cpp) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_algo.h:3461:5: note:   template argument deduction/substitution failed:\n'}
+[1.672307] (optical_flow_cpp) StderrLine: {'line': b'/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: note:   mismatched types \xe2\x80\x98std::initializer_list<_Tp>\xe2\x80\x99 and \xe2\x80\x98int\xe2\x80\x99\n'}
+[1.672328] (optical_flow_cpp) StderrLine: {'line': b'  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());\n'}
+[1.672349] (optical_flow_cpp) StderrLine: {'line': b'      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.672370] (optical_flow_cpp) StderrLine: {'line': b'In file included from /usr/include/c++/11/algorithm:62,\n'}
+[1.672391] (optical_flow_cpp) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18,\n'}
+[1.672412] (optical_flow_cpp) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,\n'}
+[1.672432] (optical_flow_cpp) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,\n'}
+[1.672455] (optical_flow_cpp) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[1.672484] (optical_flow_cpp) StderrLine: {'line': b'                 from /home/thomas/oflow_vectors/src/opt_flow.cpp:7:\n'}
+[1.672507] (optical_flow_cpp) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_algo.h:3467:5: note: candidate: \xe2\x80\x98template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)\xe2\x80\x99\n'}
+[1.672538] (optical_flow_cpp) StderrLine: {'line': b' 3467 |     max(initializer_list<_Tp> __l, _Compare __comp)\n'}
+[1.672562] (optical_flow_cpp) StderrLine: {'line': b'      |     ^~~\n'}
+[1.672585] (optical_flow_cpp) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_algo.h:3467:5: note:   template argument deduction/substitution failed:\n'}
+[1.672609] (optical_flow_cpp) StderrLine: {'line': b'/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: note:   mismatched types \xe2\x80\x98std::initializer_list<_Tp>\xe2\x80\x99 and \xe2\x80\x98int\xe2\x80\x99\n'}
+[1.672635] (optical_flow_cpp) StderrLine: {'line': b'  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());\n'}
+[1.672657] (optical_flow_cpp) StderrLine: {'line': b'      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.703669] (-) TimerEvent: {}
+[1.803822] (-) TimerEvent: {}
+[1.903998] (-) TimerEvent: {}
+[2.004184] (-) TimerEvent: {}
+[2.104369] (-) TimerEvent: {}
+[2.204574] (-) TimerEvent: {}
+[2.304723] (-) TimerEvent: {}
+[2.404870] (-) TimerEvent: {}
+[2.505023] (-) TimerEvent: {}
+[2.605183] (-) TimerEvent: {}
+[2.705342] (-) TimerEvent: {}
+[2.805497] (-) TimerEvent: {}
+[2.905656] (-) TimerEvent: {}
+[3.005807] (-) TimerEvent: {}
+[3.105959] (-) TimerEvent: {}
+[3.206117] (-) TimerEvent: {}
+[3.306274] (-) TimerEvent: {}
+[3.355276] (optical_flow_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/farneback_flow_node.dir/build.make:76: CMakeFiles/farneback_flow_node.dir/src/opt_flow.cpp.o] Error 1\n'}
+[3.355443] (optical_flow_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/farneback_flow_node.dir/all] Error 2\n'}
+[3.355652] (optical_flow_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.357220] (optical_flow_cpp) CommandEnded: {'returncode': 2}
+[3.365292] (optical_flow_cpp) JobEnded: {'identifier': 'optical_flow_cpp', 'rc': 2}
+[3.375525] (-) EventReactorShutdown: {}

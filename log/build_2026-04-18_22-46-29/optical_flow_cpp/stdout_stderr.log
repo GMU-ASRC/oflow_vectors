@@ -1,0 +1,53 @@
+Consolidate compiler generated dependencies of target farneback_flow_node
+[ 50%] Building CXX object CMakeFiles/farneback_flow_node.dir/src/opt_flow.cpp.o
+/home/thomas/oflow_vectors/src/opt_flow.cpp: In member function ‘void FarnebackFlowNode::on_image(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)’:
+/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: error: no matching function for call to ‘max(int, int64_t)’
+  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());
+      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/memory:63,
+                 from /home/thomas/oflow_vectors/src/opt_flow.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)’
+  254 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note:   template argument deduction/substitution failed:
+/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘int64_t’ {aka ‘long int’})
+  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());
+      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/memory:63,
+                 from /home/thomas/oflow_vectors/src/opt_flow.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)’
+  300 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note:   template argument deduction/substitution failed:
+/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘int64_t’ {aka ‘long int’})
+  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());
+      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/algorithm:62,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/thomas/oflow_vectors/src/opt_flow.cpp:7:
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)’
+ 3461 |     max(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note:   template argument deduction/substitution failed:
+/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());
+      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/algorithm:62,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/thomas/oflow_vectors/src/opt_flow.cpp:7:
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)’
+ 3467 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note:   template argument deduction/substitution failed:
+/home/thomas/oflow_vectors/src/opt_flow.cpp:146:29: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+  146 |     int frame_gap = std::max(1, get_parameter("frame_gap").as_int());
+      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/farneback_flow_node.dir/build.make:76: CMakeFiles/farneback_flow_node.dir/src/opt_flow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/farneback_flow_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,4 @@
+Invoking command in '/home/thomas/oflow_vectors/build/optical_flow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/thomas/oflow_vectors/build/optical_flow_cpp -- -j16 -l16
+Invoked command in '/home/thomas/oflow_vectors/build/optical_flow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/thomas/oflow_vectors/build/optical_flow_cpp -- -j16 -l16
+Invoking command in '/home/thomas/oflow_vectors/build/optical_flow_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/thomas/oflow_vectors/build/optical_flow_cpp
+Invoked command in '/home/thomas/oflow_vectors/build/optical_flow_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/thomas/oflow_vectors/build/optical_flow_cpp

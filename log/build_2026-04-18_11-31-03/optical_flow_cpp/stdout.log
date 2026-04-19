@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target farneback_flow_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/farneback_flow_node.dir/src/opt_flow.cpp.o[0m
+[100%] [32m[1mLinking CXX executable farneback_flow_node[0m
+[100%] Built target farneback_flow_node
+-- Install configuration: ""
+-- Installing: /home/thomas/oflow_vectors/install/optical_flow_cpp/lib/optical_flow_cpp/farneback_flow_node
+-- Set runtime path of "/home/thomas/oflow_vectors/install/optical_flow_cpp/lib/optical_flow_cpp/farneback_flow_node" to ""
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/ament_index/resource_index/package_run_dependencies/optical_flow_cpp
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/ament_index/resource_index/parent_prefix_path/optical_flow_cpp
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/environment/ament_prefix_path.sh
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/environment/path.sh
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/environment/path.dsv
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/local_setup.bash
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/local_setup.sh
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/local_setup.zsh
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/local_setup.dsv
+-- Installing: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.dsv
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/ament_index/resource_index/packages/optical_flow_cpp
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/cmake/optical_flow_cppConfig.cmake
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/cmake/optical_flow_cppConfig-version.cmake
+-- Up-to-date: /home/thomas/oflow_vectors/install/optical_flow_cpp/share/optical_flow_cpp/package.xml
